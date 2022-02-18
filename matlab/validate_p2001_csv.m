@@ -150,11 +150,11 @@ for iname = 1 : length(filenames)
     for i = 1 : nrows
         
         if i == 1
-            disp(['Processing ' num2str(i) '/' num2str(nrows) ', GHz = ' num2str(GHz(i)) ' GHz,  Tpc = ' num2str(Tpc(i)) '% ...']);
+            disp(['Processing ' num2str(i) '/' num2str(nrows) ', GHz = ' num2str(GHz(i)) ' GHz,  Tpc = ' num2str(Tpc(i)) '% - ' num2str(Tpc(end)) '% ...']);
         end
         if i > 1
             if(GHz(i)>GHz(i-1))
-                disp(['Processing ' num2str(i) '/' num2str(nrows) ', GHz = ' num2str(GHz(i)) ' GHz,  Tpc = ' num2str(Tpc(i)) '% ...']);
+                disp(['Processing ' num2str(i) '/' num2str(nrows) ', GHz = ' num2str(GHz(i)) ' GHz,  Tpc = ' num2str(Tpc(i)) '% - ' num2str(Tpc(end)) '% ...']);
             end
         end
         
