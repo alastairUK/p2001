@@ -565,7 +565,7 @@ else
     
     if(isOctave)
         [xls, status] = oct2xls (B, xls, Profile);
-        xlsclose(xls);
+        fc = xlsclose(xls);
     else
         xlswrite(fName,B, Profile)
     end

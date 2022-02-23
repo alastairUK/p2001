@@ -4,6 +4,7 @@ if (ismac && ~isOctave() )
     disp('This code cannot run on Mac platform as it cannot start Excel server for writing the output.');
 else
     
+    fName = 'validation_results/Validation examples ITU-R P.2001 prof4 OFCOM.xlsx';
     frequency = [0.03 0.2 2 20 50];
     Page      = {'Page1', 'Page2', 'Page3', 'Page4', 'Page5'};
     Tpc_array = [0.001
@@ -560,12 +561,14 @@ else
         row = {d(i), h(i), z(i)};
         B = [B; row];
     end
+    
     if(isOctave)
         [xls, status] = oct2xls (B, xls, Profile);
-        xlsclose(xls);
+        fc = xlsclose(xls);
     else
         xlswrite(fName,B, Profile)
     end
     
     disp(['Results are written in the file: ' fName]);
+    
 end

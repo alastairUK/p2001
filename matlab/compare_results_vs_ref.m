@@ -54,7 +54,7 @@ for fln = 1:2
     end
     
     if (isOctave)
-        xlsclose(xlsr1);
-        xlsclose(xlsr2);
+        fcl = xlsclose(xlsr1);
+        fcl = xlsclose(xlsr2);
     end
 end
