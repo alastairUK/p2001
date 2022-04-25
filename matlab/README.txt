@@ -7,38 +7,18 @@ GENERAL NOTES
 
 Files and subfolders in the distribution .zip package.
 
- tl_p2001.m                - MATLAB function implementing Recommendation ITU-R P.2001-4
+ tl_p2001.m             - MATLAB function implementing Recommendation ITU-R P.2001-4
   
-  
- validate_p2001_b2iseac.m   - MATLAB scripts used to validate the implementation of Recommendation ITU-R P.2001-4
- validate_p2001_prof4.m       as defined in the file tl_p2001.m using a set of test terrain profiles provided in
-                              the folder ./validation_results/
+ ./private/             - Folder containing the functions used by tl_p2001.m and validate_p2001*.m
 
-
- compare_results_vs_ref.m   - MATLAB script used to compute the deviations in basic transmission loss
-                              Lb obtained using tl_p2001.m from the reference values available in the folder
-                              /validation_examples/ for profiles prof4 (land only) and b2iseac (mixed path)
-
- ./validation_examples/     - Folder containing validation examples for Recommendation ITU-R P.2001-3
-
- ./validation_results/      - Folder containing the results of the validation tests using tl_p2001.m on the terrain
-                              profiles that correspond to the profiles defined in ./validation_examples/
-
- ./private/	            - Folder containing the functions used by tl_p2001.m and validate_p2001*.m
-
-
-the following folders and files containing validation examples in .csv are to replace the validation examples in Excel 
-
-
- validate_p2001_csv.m       - MATLAB scripts used to validate the implementation of Recommendation ITU-R P.2001-4
+ validate_p2001.m       - MATLAB scripts used to validate the implementation of Recommendation ITU-R P.2001-4
                               as defined in the file tl_p2001.m using a set of test terrain profiles provided in
-                              the folder ./validation_examples_csv/
+                              the folder ./validation_examples/
 
+ ./validation_examples/ - Folder containing validation examples for Recommendation ITU-R P.2001-4
 
- ./validation_examples_csv/     - Folder containing validation examples for Recommendation ITU-R P.2001-3
-
- ./validation_results_csv/      - Folder containing the results of the validation tests using tl_p2001.m on the terrain
-                                  profiles that correspond to the profiles defined in ./validation_examples/
+ ./validation_results/  - Folder containing the results of the validation tests using tl_p2001.m on the terrain
+                                profiles that correspond to the profiles defined in ./validation_examples/
 
 
 UPDATES AND FIXES
